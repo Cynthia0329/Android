@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_modify"
+        android:icon="@mipmap/edit"
+        android:title="menu1"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@mipmap/delete2"
+        android:title="menu2"
+        app:showAsAction="always"/>
+</menu>

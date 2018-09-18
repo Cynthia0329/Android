@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cqnu.chenyudan.activity.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ListView
+        android:id="@+id/lv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="366dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入你要查询的名字"
+            android:inputType="textPersonName"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="45dp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="search"
+            app:srcCompat="@drawable/search"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="-28dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/et_search"
+            android:layout_toRightOf="@+id/et_search"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
